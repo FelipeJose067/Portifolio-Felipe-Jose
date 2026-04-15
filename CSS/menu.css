@@ -1,0 +1,170 @@
+/* body{
+    padding-top: 80px;
+} */
+
+.menu-inicial{
+    width: 100%;
+    background-color: rgba(73, 101, 223, 0.829);
+    padding: 10px 8%;
+    top: 0;
+    position: sticky;
+    z-index: 3;
+} 
+
+.navhome{
+    /* largura da pagina */
+    width: 100%;
+    /* direcionar flexivel */
+    display: flex;
+    /* alinhar os intens centro */
+    align-items: center;
+    /* centralizar os elementos em cada canto. (Between COLOCA um em cada canto) */
+    justify-content: space-between;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* como é uma ID Usamos o # */
+#nav-logo{
+    font-size: 40px;
+    /* Cor da fonte */
+    color: rgb(255, 255, 255);
+    /* Deixar tudo na mesma linha */
+    white-space: nowrap;
+    gap: 20px;
+}
+
+.container .primeiro-nome{
+    color: white;
+    font-size: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+.container .sub-nome{
+    color: blue;
+    font-size: 40px;
+    
+}
+
+.nome, .sub-nome{
+   margin: 0;
+}
+
+
+.nav-item{
+    /* ficar um do lado do outro */
+    display: flex;
+    /* espaço entre os elementos */
+    gap: 50px;
+}
+
+.nav-item a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-item a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #00c3ff;
+    transition: 0.3s;
+}
+
+.nav-item a:hover::after{
+    width: 100%;
+}
+
+.sobre-mim .sub-title{
+    color: rgb(236, 102, 68);
+    display: flex;
+    gap: 10px;
+    
+}
+
+.sobre-mim .sub-title a{
+    color: green;
+    
+}
+
+.title-principal{
+    color: turquoise;
+    text-align: center;
+    padding: 40px;
+    font-size: 50px;
+    text-decoration: underline black 1px;
+}
+.title-primario{
+    color: #00c3ff;
+    font-size: 40px;
+    padding: 10px;
+    justify-content: space-between;
+    
+}
+
+.title-secundario{
+    font-family: sans-serif;
+    color: rgb(32, 159, 209);
+    align-items: center;
+    
+    
+}
+
+
+.img-sobremim{
+    width: 500px;
+    height: 400px;
+    border-radius: 50%;
+   
+    
+}
+
+.title-secundario .img-sobremim{
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1170px)
+{
+    .nav-item{
+        display: flex;
+    }
+
+}

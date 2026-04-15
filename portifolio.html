@@ -5,20 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio Felps-DEV</title>
     <link rel="stylesheet" href="CSS/style.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
 <body>
-    <header>
+    <header class="menu-inicial">
         <!-- nav - Tag de navegação da pagina -->
         <nav class="navhome">
             <!-- icone para aparecer na pagina -->
-            <i class="fa-solid fa-computer" id="nav-logo"> <span class="nav-title">Felipe <p class="nav-subtitle">José</p></span></i>
+            <div class="container">
+                <i class="fa-solid fa-computer" id="nav-logo"></i>            
+                <span class="primeiro-nome">
+                    <p class="nome">Felipe</p>
+                    <p class="sub-nome">José</p>
+                </span>
+            </div>
             <!-- Lista não ordenadas Bolinha em volta da escrita -->
              <ul class="nav-item">
-                <!-- Usamos li para inserir intens na nossa lista -->
-                 
+                <!-- Usamos li para inserir intens na nossa lista -->                 
                 <li class="nav-item"><a href="#sobremim">Sobre Mim</a>
                 <li class="nav-item"><a href="#formacao">Formação</a></li>
                 <li class="nav-item"><a href="#projetos">Projetos</a></li>
@@ -26,35 +32,35 @@
                 </li>           
              </ul>
         </nav>
-
-        <section class="sobremim">
-            <h1 class="title-principal">Felipe José</h1>
-            <p class="subtitle">Desenvoledor Full Stack</p>
-
-            <button class="btn-principal">
-               Meus Projetos
-            </button>
-            <button class="btn-secundario">
-               <i class="fa-regular fa-envelope"></i>
-               Contato
-            </button>
-            <h2 class="title-primario">Sobre Mim</h2>
-            <p class="title-secundario">
-              Estudante de desenvolvimento de software pela Fábrica de Software SENAC-MS, com experiência prática em projetos reais como o desenvolvimento de soluções para a ParkTec em Campo Grande - MS.Formação em andamento em Análise e Desenvolvimento de Sistemas (UCDB) e participação em hackathons com foco em design e prototipação (Figma).
-            </p>
-            <div>
+    </header>
+    <main>
+        <section >
+            <div class="sobre-mim">
+                <h1 class="sub-title">Desenvolvedor<a class="full-stack">Full Stack</a></h1>
+                <h2 class="title-principal">Felipe José</h2>
+    
+                <h2 class="title-primario">Sobre Mim</h2>
+                <p class="title-secundario">
+                    Estudante de desenvolvimento de software pela Fábrica de Software SENAC-MS, com experiência prática em projetos reais como o desenvolvimento de soluções para a ParkTec em Campo Grande - MS.Formação em andamento em Análise e Desenvolvimento de Sistemas (UCDB) e participação em hackathons com foco em design e prototipação (Figma).
+                </p>
                 <img class="img-sobremim" src="IMG/foto-perfil.jpg" alt="">
             </div>
+            <div>
+            </div>
         </section>
-            
-        
-    </header>
-
-
-
-
-
-
+    </main>   
+    
+    
+    <button class="btn-principal">
+       Meus Projetos
+    </button>
+    <button class="btn-secundario">
+       <i class="fa-regular fa-envelope"></i>
+       Contato
+    </button>    
+    
+    
+    
     
 </body>
 </html>
