@@ -1,6 +1,11 @@
-/* body{
-    padding-top: 80px;
-} */
+body{
+    background-image: url(../IMG/fotodefundo-portifolio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    object-fit: cover;
+}
 
 .menu-inicial{
     width: 100%;
@@ -55,12 +60,13 @@
    margin: 0;
 }
 
-
 .nav-item{
     /* ficar um do lado do outro */
     display: flex;
     /* espaço entre os elementos */
     gap: 50px;
+    /* tamanho da fonte de texto */
+    font-size: 20px;
 }
 
 .nav-item a{
@@ -72,6 +78,7 @@
 }
 
 .nav-item a:after{
+    /* efeito da linha embaixo do texto */
     content: "";
     position: absolute;
     left: 0;
@@ -89,9 +96,10 @@
 .sobre-mim .sub-title{
     color: rgb(236, 102, 68);
     display: flex;
-    gap: 10px;
+    gap: 20px;
     
 }
+
 
 .sobre-mim .sub-title a{
     color: green;
@@ -115,24 +123,34 @@
 
 .title-secundario{
     font-family: sans-serif;
-    color: rgb(32, 159, 209);
+    color: rgb(255, 255, 255);
     align-items: center;
-    
-    
+    font-size: 25px;
 }
 
+.perfil-sobremim{
+    display: flex;
+    align-items: center;
+    gap: 1000px;
+    flex-direction: row-reverse;
+}
 
-.img-sobremim{
+.perfil-sobremim img{
     width: 500px;
     height: 400px;
     border-radius: 50%;
-   
-    
 }
 
-.title-secundario .img-sobremim{
+.title-secundario{
+    max-width: 400px;
     justify-content: space-between;
+
 }
+
+
+/* .title-secundario .img-sobremim{
+    justify-content: space-between;
+} */
 
 
 
